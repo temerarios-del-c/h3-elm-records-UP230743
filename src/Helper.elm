@@ -1,10 +1,5 @@
 module Helper exposing (..)
 
---import Html
---import Html.Attributes
---Ejercicio 1
-
-
 languages : List { name : String, releaseYear : Int, currentVersion : String }
 languages =
     [ { name = "elm", releaseYear = 2012, currentVersion = "0.19.1" }
