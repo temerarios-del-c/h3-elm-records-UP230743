@@ -4,6 +4,25 @@ import Html exposing (Html, div, h1, li, text, ul)
 
 
 
+--Simple Excercises
+
+
+add2 : Int -> Int -> Int
+add2 int1 int2 =
+    int1 + int2
+
+
+add3 : Float -> Float -> Float -> Float
+add3 float1 float2 float3 =
+    float1 + float2 + float3
+
+
+calc : Int -> Int -> (Int -> Int -> Int) -> Int
+calc int1 int2 operator =
+    operator int1 int2
+
+
+
 --Ejercicio 1
 
 
@@ -14,8 +33,8 @@ languages =
     ]
 
 
-languageName : List { name : String, releaseYear : Int, currentVersion : String } -> List String
-languageName list =
+languagesName : List { name : String, releaseYear : Int, currentVersion : String } -> List String
+languagesName list =
     List.map .name list
 
 
@@ -57,8 +76,8 @@ videogame =
     ]
 
 
-getVideogameGenre : List Videogame -> List (List String)
-getVideogameGenre videogameList =
+getVideogameGenres : List Videogame -> List (List String)
+getVideogameGenres videogameList =
     List.map .genres videogameList
 
 
