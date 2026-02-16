@@ -1,8 +1,7 @@
 module Helper exposing (..)
 
-import Html 
-import Html.Atributes
-
+--import Html
+--import Html.Attributes
 --Ejercicio 1
 
 
