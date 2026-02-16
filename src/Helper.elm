@@ -44,6 +44,7 @@ type alias Videogame =
     { title : String, releaseYear : Int, available : Bool, downloads : Int, genres : List String }
 
 
+videogame : List Videogame
 videogame =
     [ { title = "Control", releaseYear = 2019, available = True, downloads = 50000, genres = [ "Action", "Shooter" ] }
     , { title = "Ocarina of time", releaseYear = 1995, available = False, downloads = 50000, genres = [ "Action", "Adventure" ] }
