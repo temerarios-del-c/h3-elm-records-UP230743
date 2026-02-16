@@ -1,7 +1,6 @@
 module Helper exposing (..)
 
-import Html
-import Html.Attributes
+import Html exposing (Html, div, h1, li, text, ul)
 
 
 
