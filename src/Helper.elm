@@ -1,5 +1,12 @@
 module Helper exposing (..)
 
+import Htlm.Attributes
+import Html
+
+
+
+--Ejercicio 1
+
 
 languages : List { name : String, releaseYear : Int, currentVersion : String }
 languages =
@@ -54,3 +61,31 @@ videogame =
 getVideogameGenre : List Videogame -> List (List String)
 getVideogameGenre videogameList =
     List.map .genres videogameList
+
+
+
+--Homework (HTML)
+
+
+type alias Computer =
+    { ram : String, model : String, brand : String, screenSize : String }
+
+
+myLaptop : Computer
+myLaptop =
+    { ram = "16GB", model = "TinkPad T14", brand = "Lenovo", screenSize = "14 Pulgadas" }
+
+
+main : Html msg
+main =
+    div []
+        [ h1 [] [ text "My laptop" ]
+        , div []
+            [ ul []
+                [ li [] [ text ("Ram: " ++ myLaptop.ram) ]
+                , li [] [ text ("Modelo: " ++ myLaptop.model) ]
+                , li [] [ text ("Marca: " ++ myLaptop.brand) ]
+                , li [] [ text ("Pulgadas: " ++ myLaptop.screenSize) ]
+                ]
+            ]
+        ]
